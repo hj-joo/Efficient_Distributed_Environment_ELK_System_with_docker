@@ -239,7 +239,7 @@ cd Efficient_Distributed_Environment_ELK_System_with_docker/
 ```
 docker-compose up -d
 ```
-4. Make log data
+4. Make 1 million log data 
 ```
 # 0. Install gcc compiler
 sudo apt-get install gcc
@@ -259,6 +259,7 @@ cd log_gen/;./a.out;cd ..;cd log_gen2/;./a.out
 cd ..
 ```
 5. Check the log data stored in the Elasticsearch index through the Kibana in real time.
+> If you want to receive a Kivana Web service, you have to add port **_5601 and 9200_**.
 6. View running docker containers and computing resources
 ```
 # docker container confirm
