@@ -7,7 +7,7 @@
 # Example of two pipelines:
 #
 - pipeline.id: logstash2
-  pipeline.workers: 16
+  pipeline.workers: 12
   #pipeline.batch.size: 1
   #config.string: "input { generator {} } filter { sleep { time => 1 } } output { stdout { codec => dots } }"
 # - pipeline.id: another_test
