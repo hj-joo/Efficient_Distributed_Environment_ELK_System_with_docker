@@ -2,7 +2,7 @@ filebeat.inputs:
 - type: log
   enabled: true
   paths:
-    - /usr/share/filebeat/mylog/y.log
+    - /usr/share/filebeat/log_gen2/y.log
 
 output.logstash:
   hosts: ["logstash2:5045"]
