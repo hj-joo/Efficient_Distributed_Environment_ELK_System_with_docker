@@ -255,6 +255,19 @@ gcc mklog2.c
 cd ..
 
 # 3. Create 2 log data files at the same time
-Efficient_Distributed_Environment_ELK_System_with_docker/log_gen/a.out;Efficient_Distributed_Environment_ELK_System_with_docker/log_gen2/a.out;
+cd log_gen/;./a.out;cd ..;cd log_gen2/;./a.out
+cd ..
 ```
 5. Check the log data stored in the Elasticsearch index through the Kibana in real time.
+6. View running docker containers and computing resources
+```
+# docker container confirm
+docker ps
+
+# computing resources
+docker stats
+```
+7. Docker-compose stop
+```
+docker-compose stop
+```
